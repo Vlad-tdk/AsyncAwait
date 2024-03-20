@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		9E921B1B2BAB135400D00523 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E921B1A2BAB135400D00523 /* AppDelegate.swift */; };
 		9E921B1D2BAB135400D00523 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E921B1C2BAB135400D00523 /* SceneDelegate.swift */; };
-		9E921B1F2BAB135400D00523 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E921B1E2BAB135400D00523 /* ViewController.swift */; };
+		9E921B1F2BAB135400D00523 /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E921B1E2BAB135400D00523 /* CoursesViewController.swift */; };
 		9E921B222BAB135400D00523 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 9E921B212BAB135400D00523 /* Base */; };
 		9E921B242BAB135600D00523 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E921B232BAB135600D00523 /* Assets.xcassets */; };
 		9E921B272BAB135600D00523 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 9E921B262BAB135600D00523 /* Base */; };
@@ -22,7 +22,7 @@
 		9E921B172BAB135400D00523 /* AsyncAwait.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsyncAwait.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E921B1A2BAB135400D00523 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E921B1C2BAB135400D00523 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9E921B1E2BAB135400D00523 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9E921B1E2BAB135400D00523 /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
 		9E921B212BAB135400D00523 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9E921B232BAB135600D00523 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E921B262BAB135600D00523 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,11 +62,11 @@
 		9E921B192BAB135400D00523 /* AsyncAwait */ = {
 			isa = PBXGroup;
 			children = (
-				9E921B1A2BAB135400D00523 /* AppDelegate.swift */,
 				9E921B1C2BAB135400D00523 /* SceneDelegate.swift */,
-				9E921B1E2BAB135400D00523 /* ViewController.swift */,
-				9E921B2E2BAB147F00D00523 /* NetworkManager.swift */,
+				9E921B1A2BAB135400D00523 /* AppDelegate.swift */,
+				9E921B1E2BAB135400D00523 /* CoursesViewController.swift */,
 				9E921B302BAB14D000D00523 /* Course.swift */,
+				9E921B2E2BAB147F00D00523 /* NetworkManager.swift */,
 				9E921B322BAB1D7400D00523 /* CourseCell.swift */,
 				9E921B202BAB135400D00523 /* Main.storyboard */,
 				9E921B232BAB135600D00523 /* Assets.xcassets */,
@@ -149,7 +149,7 @@
 			files = (
 				9E921B332BAB1D7400D00523 /* CourseCell.swift in Sources */,
 				9E921B2F2BAB147F00D00523 /* NetworkManager.swift in Sources */,
-				9E921B1F2BAB135400D00523 /* ViewController.swift in Sources */,
+				9E921B1F2BAB135400D00523 /* CoursesViewController.swift in Sources */,
 				9E921B312BAB14D000D00523 /* Course.swift in Sources */,
 				9E921B1B2BAB135400D00523 /* AppDelegate.swift in Sources */,
 				9E921B1D2BAB135400D00523 /* SceneDelegate.swift in Sources */,
