@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CtI-WF-14I">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -12,16 +12,68 @@
             <objects>
                 <tableViewController id="Hns-D7-L5A" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="p4k-Ss-KL5">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="SAL-QK-LEv">
-                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="SAL-QK-LEv" customClass="CourseCell" customModule="AsyncAwait" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SAL-QK-LEv" id="fZK-RQ-IGC">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QqX-xX-cY8">
+                                            <rect key="frame" x="0.0" y="0.0" width="140" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="140" id="Bpg-uj-SeC"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of course" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lcb-p8-dfU">
+                                            <rect key="frame" x="148" y="11" width="196" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="41" id="Jd0-Ok-dSE"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lessons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69X-HD-s8U">
+                                            <rect key="frame" x="148" y="40.5" width="196" height="16"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="16" id="SHf-EU-tiw"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tests" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJs-cH-JbV">
+                                            <rect key="frame" x="148" y="72.5" width="212" height="16"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="16" id="Hvp-Qs-mo0"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="69X-HD-s8U" firstAttribute="top" secondItem="Lcb-p8-dfU" secondAttribute="bottom" constant="7.5" id="0pF-NB-U6V"/>
+                                        <constraint firstAttribute="trailing" secondItem="bJs-cH-JbV" secondAttribute="trailing" constant="15" id="1hr-uz-n8D"/>
+                                        <constraint firstItem="Lcb-p8-dfU" firstAttribute="top" secondItem="fZK-RQ-IGC" secondAttribute="topMargin" id="1x2-gC-UMk"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Lcb-p8-dfU" secondAttribute="trailing" constant="15" id="23P-KT-Uha"/>
+                                        <constraint firstAttribute="bottom" secondItem="QqX-xX-cY8" secondAttribute="bottom" id="5f0-vN-3fx"/>
+                                        <constraint firstItem="Lcb-p8-dfU" firstAttribute="top" secondItem="fZK-RQ-IGC" secondAttribute="topMargin" id="6gz-ly-fnm"/>
+                                        <constraint firstItem="bJs-cH-JbV" firstAttribute="leading" secondItem="QqX-xX-cY8" secondAttribute="trailing" constant="8" id="CiN-RG-79N"/>
+                                        <constraint firstItem="QqX-xX-cY8" firstAttribute="leading" secondItem="fZK-RQ-IGC" secondAttribute="leading" id="E6r-em-q4s"/>
+                                        <constraint firstItem="Lcb-p8-dfU" firstAttribute="leading" secondItem="QqX-xX-cY8" secondAttribute="trailing" constant="8" id="JmE-Lg-z1R"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="69X-HD-s8U" secondAttribute="trailing" constant="15" id="PZH-xW-9jW"/>
+                                        <constraint firstItem="69X-HD-s8U" firstAttribute="leading" secondItem="QqX-xX-cY8" secondAttribute="trailing" constant="8" id="QKW-9C-Qw9"/>
+                                        <constraint firstItem="bJs-cH-JbV" firstAttribute="top" secondItem="69X-HD-s8U" secondAttribute="bottom" constant="16" id="hlZ-KM-Ugq"/>
+                                        <constraint firstAttribute="bottom" secondItem="bJs-cH-JbV" secondAttribute="bottom" constant="11.5" id="qLo-X2-dLn"/>
+                                        <constraint firstItem="Lcb-p8-dfU" firstAttribute="leading" secondItem="QqX-xX-cY8" secondAttribute="trailing" constant="8" id="tL5-C4-ses"/>
+                                        <constraint firstItem="QqX-xX-cY8" firstAttribute="top" secondItem="fZK-RQ-IGC" secondAttribute="top" id="yrf-Il-drZ"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -34,14 +86,14 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MaE-vX-Rli" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="59" y="12"/>
+            <point key="canvasLocation" x="81" y="11"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="h53-wT-nWE">
             <objects>
                 <navigationController id="CtI-WF-14I" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="w9F-2c-zbk">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="w9F-2c-zbk">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
